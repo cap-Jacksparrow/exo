@@ -340,20 +340,29 @@
                 display: flex;
             }
 
-       .c-hero_contain{
+       .c-hero_contain {
+        margin-top: 0;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Resize main card for tablets and mobile */
+    .main-card {
         height: 250px;
         width: 250px;
-       }
-        .c-hero_contain::before {
-                                content: '';
-                                position: absolute;
-                                height:250px;
-                                width: 250px;
-                                background-size: cover;
-                                background-position: center;
-                                
+        border-radius: 20px;
+    }
+
+    /* Resize background overlay for main-card */
+    .c-hero_contain::before {
+        height: 250px;
+        width: 250px;
+        border-radius: 20px;
+    }
     
-        }
+        
         .mar{
             margin-bottom: 13%;
             color:#fff;

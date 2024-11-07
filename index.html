@@ -171,6 +171,17 @@
 
                             }
 
+main-card::after {
+    content: '';
+    position: absolute;
+    top: -20px;  /* Extend slightly outside the card bounds */
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.5); /* More visible shadow */
+    z-index: 0;
+    border-radius: 20px; /* Adjust if you still want some rounding, or remove */
+}
 
 
 
